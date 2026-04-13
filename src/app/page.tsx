@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { NumberedSection } from "@/components/numbered-section";
+import { TravelBetterGrid } from "@/components/travel-better-grid";
 import { WritingSection } from "@/components/writing-section";
 import { reachStats, servicePillars, site } from "@/content/site";
 
@@ -36,15 +37,47 @@ export default function Home() {
                 Media kit
               </Link>
             </div>
-            <p className="mt-12 max-w-lg text-lg leading-relaxed text-white/80">
-              <a href={`mailto:${site.email}`} className="underline-offset-2 hover:underline">
+            <div className="mt-12 max-w-lg space-y-2 text-lg leading-relaxed text-white/80">
+              <a
+                href={`mailto:${site.email}`}
+                className="inline-flex items-center gap-2 underline-offset-2 hover:underline"
+              >
+                <svg
+                  className="h-[1.1em] w-[1.1em] shrink-0 text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden
+                >
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
                 {site.email}
               </a>
-              <br />
-              <span>{site.instagramHandle}</span>
-              <br />
-              <span className="text-white/60">{site.heroContactLine}</span>
-            </p>
+              <div>
+                <a
+                  href={site.social.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 underline-offset-2 hover:underline"
+                >
+                  <svg
+                    className="h-[1.1em] w-[1.1em] shrink-0 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden
+                  >
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 1-2.881 0 1.44 1.44 0 0 1 2.881 0z" />
+                  </svg>
+                  {site.instagramHandle}
+                </a>
+              </div>
+            </div>
           </div>
           <div className="relative min-h-[320px] lg:h-full lg:min-h-0">
             {site.heroImages.length > 0 ? (
@@ -100,7 +133,6 @@ export default function Home() {
         number="02"
         kicker="Reach"
         title="By the numbers"
-        subtitle="Snapshot for brands—full detail lives in the media kit."
         tone="white"
       >
         <div className="grid gap-5 md:grid-cols-3">
@@ -121,25 +153,11 @@ export default function Home() {
         </div>
       </NumberedSection>
 
-      {/* 03 What I write */}
-      <NumberedSection
-        id="writing"
-        number="03"
-        kicker="Writing"
-        title="What I write"
-        subtitle="Long-form travel and food—editorial features and guest pieces."
-        tone="white"
-      >
-        <WritingSection />
-      </NumberedSection>
-
-      {/* 04 Services */}
+      {/* 03 What I create */}
       <NumberedSection
         id="services"
-        number="04"
-        kicker="Services"
+        number="03"
         title="What I create"
-        subtitle="Story-led content for audiences who care about place, plate, and people—plus partnerships that fit the journey."
         tone="beige"
       >
         <div className="grid gap-6 md:grid-cols-3">
@@ -164,21 +182,29 @@ export default function Home() {
         </Link>
       </NumberedSection>
 
-      {/* 05 About */}
+      {/* 04 What I write */}
       <NumberedSection
-        id="about-preview"
+        id="writing"
+        number="04"
+        title="What I write"
+        tone="white"
+      >
+        <WritingSection />
+      </NumberedSection>
+
+      {/* 05 Travel better */}
+      <NumberedSection
+        id="travel-better"
         number="05"
-        kicker={site.aboutKicker}
-        title={site.aboutHeadline}
-        subtitle={site.aboutBody}
+        title={
+          <>
+            <span className="text-[var(--green-muted)]">Travel </span>
+            <span className="text-[var(--green-mid)]">better</span>
+          </>
+        }
         tone="beige"
       >
-        <Link
-          href="/about"
-          className="inline-flex text-sm font-semibold text-[var(--green-mid)] underline-offset-4 hover:underline"
-        >
-          Read more →
-        </Link>
+        <TravelBetterGrid />
       </NumberedSection>
 
       {/* CTA */}

@@ -17,9 +17,6 @@ export function LuangPrabangThingsToDo({ items }: { items: LuangPrabangThing[] }
       >
         Things to do
       </h4>
-      <p className="mt-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-[var(--green-muted)]">
-        Nine picks · two columns
-      </p>
       <ol className="mt-5 grid list-none grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-3">
         {items.map((item, i) => (
           <li key={i} className="flex gap-2.5">

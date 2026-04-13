@@ -31,9 +31,9 @@ export const collaborationSpotlights = [
 
 export const luangPrabangHighlight = {
   permalink: "https://www.instagram.com/reels/DHgJ840J3DA/",
-  title: "Luang Prabang — standout reel",
+  title: "Luang Prabang — Standout Reel",
   description:
-    "Recent work for AirAsia spotlighting Luang Prabang, a UNESCO World Heritage Site in Laos. The reel passed roughly 25M views, with on the order of 1.4M likes and 1.3M shares—place-first storytelling and visuals that helped audiences discover a city many had never heard of.",
+    "Recent work for AirAsia spotlighting Luang Prabang, a UNESCO World Heritage Site in Laos. The reel passed roughly 25M views, with on the order of 1.4M likes and 1.3M shares—place-first storytelling and visuals that helped audiences discover a city many had never heard of. The CEO of AirAsia also used it as a case study at the World Tourism Conference.",
 } as const;
 
 /** Field-notes style list for the Luang Prabang column — optional `mention` renders as a handle chip. */
@@ -62,14 +62,20 @@ export type CollaborationBrand = {
   logoSrc: string;
   /** Render larger — fine detail or small marks in the asset. */
   priority?: boolean;
+  /** Slightly smaller tile — busy or oversized marks. */
+  compact?: boolean;
+  /** A bit smaller than default cloud size (not as small as `compact`). */
+  compactSoft?: boolean;
 };
 
 export const collaborationBrands: CollaborationBrand[] = [
-  { name: "Fastrack", logoSrc: "/collabs/fastrack.png" },
+  { name: "SK-II", logoSrc: "/collabs/sk2.png", compact: true },
   { name: "Airbnb", logoSrc: "/collabs/airbnb.png" },
   { name: "Egypt", logoSrc: "/collabs/egypt.png", priority: true },
+  { name: "Fastrack", logoSrc: "/collabs/fastrack.png" },
   { name: "AirAsia", logoSrc: "/collabs/airasia.png", priority: true },
   { name: "Mokobara", logoSrc: "/collabs/mokobara.png", priority: true },
+  { name: "Vivo", logoSrc: "/collabs/vivo.png", compact: true },
   { name: "Farmley", logoSrc: "/collabs/farmley.png", priority: true },
   { name: "IDFC FIRST Bank", logoSrc: "/collabs/idfc-first-bank.png" },
   { name: "Soch", logoSrc: "/collabs/soch.png" },
@@ -78,4 +84,6 @@ export const collaborationBrands: CollaborationBrand[] = [
   { name: "Nomad eSIM", logoSrc: "/collabs/nomad-esim.png", priority: true },
   { name: "Oppo", logoSrc: "/collabs/oppo.png", priority: true },
   { name: "Perfora", logoSrc: "/collabs/perfora.png" },
+  { name: "MakeMyTrip", logoSrc: "/collabs/mmt.png", compactSoft: true },
+  { name: "ITC", logoSrc: "/collabs/itc.png" },
 ];

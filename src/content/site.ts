@@ -16,7 +16,7 @@ export const site = {
   /** Home hero — short intro (full story on About / media kit) */
   heroParagraphs: [
     "I'm Chaitali Verma—I travel slow and offbeat, chasing immersive local moments: people, food, and the stories behind each place (from Sri Lanka to Italy to Vietnam and beyond).",
-    "Bold visuals and real human stories. Featured on CNN News18. I share destinations through culture and community—mindful exploration that lifts heritage and local voices.",
+    "Bold visuals and real human stories. I share destinations through culture and community—mindful exploration that lifts heritage and local voices.",
   ] as const,
   /**
    * Hero right panel — order: [0] = large featured (clearest photo), [1–4] = 2×2 grid (next clearest first).
@@ -28,12 +28,11 @@ export const site = {
       alt: "Chaitali Verma",
       objectPosition: "center 28%",
     },
-    { src: "/chaitali_duck.jpeg", alt: "Chaitali with ducks", objectPosition: "center 40%" },
+    { src: "/chaitali_cave.jpeg", alt: "Chaitali at a cave", objectPosition: "center 40%" },
     { src: "/chaitali_rome.jpeg", alt: "Chaitali in Rome", objectPosition: "center 40%" },
     { src: "/chaitali_srilanka.jpeg", alt: "Chaitali in Sri Lanka", objectPosition: "center 40%" },
     { src: "/chaitali_swim.jpeg", alt: "Chaitali swimming", objectPosition: "center 35%" },
   ] as const satisfies readonly HeroImage[],
-  heroContactLine: "@chaitali.verma · share your brief for collaborations",
   tagline: "Places tasted slowly, and the people who make them unforgettable.",
   description:
     "Chaitali shares travel and food through reels, photos, and long-form notes—markets at dawn, family recipes, and coastlines that feel like a pause.",
@@ -107,7 +106,7 @@ export const portfolioFeatured: PortfolioItem[] = [
     platform: "Instagram",
     year: 2025,
     href: "/instagram#postcards",
-    statLine: "1.4M+ likes · standout reel",
+    statLine: "1.4M+ likes · Standout Reel",
     size: "large",
   },
   {
@@ -201,7 +200,7 @@ export const reachStats = [
     hint: "followers (@chaitali.verma)",
   },
   {
-    label: "Standout reel",
+    label: "Standout Reel",
     value: "1.4M+",
     hint: "likes · Luang Prabang guide (Mar 2025)",
   },
@@ -215,18 +214,18 @@ export const reachStats = [
 export const servicePillars = [
   {
     n: 1,
-    title: "Destination & route storytelling",
+    title: "Destinations",
     body: "Itineraries with soul—markets, heritage walks, and under-sung cities (not just icons). Example: a full Luang Prabang guide with ethical elephant experiences and local makers.",
   },
   {
     n: 2,
-    title: "Food & heritage",
+    title: "Local Heritage",
     body: "Bakeries, cacao, regional plates, and the people behind recipes—styled like editorial travel features.",
   },
   {
     n: 3,
-    title: "Travel & lifestyle brands",
-    body: "Airlines, hospitality, and gear where the story fits the journey (e.g. route launches, sustainable experiences).",
+    title: "Experiential Storytelling",
+    body: "Airlines, hospitality, and gear where the story fits the journey—campaigns and long-form work with a lived, human lens.",
   },
 ] as const;
 
@@ -320,3 +319,35 @@ export const heritagePosts: TravelReel[] = [
       "A market rooted in the 1960s traveller trade—tribes from across states, neon merch, shacks, and tapestries. One of Goa’s best, every Wednesday.",
   },
 ];
+
+export type TravelBetterPartner = {
+  id: string;
+  cardLabel: string;
+  href: string;
+  imageSrc: string;
+  imageAlt: string;
+};
+
+/** Stays and experiences—swap `href` for your partner or referral URLs when ready. */
+export const travelBetter: {
+  partners: TravelBetterPartner[];
+} = {
+  partners: [
+    {
+      id: "airbnb",
+      cardLabel: "Find stays on Airbnb",
+      href: "https://www.airbnb.com/",
+      imageSrc:
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+      imageAlt: "A welcoming pool and patio at a vacation rental",
+    },
+    {
+      id: "getyourguide",
+      cardLabel: "Tours & tickets on GetYourGuide",
+      href: "https://www.getyourguide.com/",
+      imageSrc:
+        "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80",
+      imageAlt: "Open road through mountains at golden hour",
+    },
+  ],
+};

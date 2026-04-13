@@ -3,8 +3,9 @@ import type { ReactNode } from "react";
 type Props = {
   id?: string;
   number: string;
-  kicker: string;
-  title: string;
+  /** Small caps label above the title; omit to hide */
+  kicker?: string;
+  title: ReactNode;
   subtitle?: string;
   children: ReactNode;
   className?: string;
@@ -42,10 +43,14 @@ export function NumberedSection({
             {number}
           </div>
           <div className="min-w-0 flex-1 lg:pt-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--green-deep)]">
-              {kicker}
-            </p>
-            <h2 className="mt-3 font-serif text-[clamp(1.75rem,4vw,2.25rem)] font-semibold leading-tight text-[var(--green-deep)]">
+            {kicker ? (
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--green-deep)]">
+                {kicker}
+              </p>
+            ) : null}
+            <h2
+              className={`font-serif text-[clamp(1.75rem,4vw,2.25rem)] font-semibold leading-tight text-[var(--green-deep)] ${kicker ? "mt-3" : ""}`}
+            >
               {title}
             </h2>
             {subtitle ? (

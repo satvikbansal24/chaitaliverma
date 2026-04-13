@@ -12,7 +12,7 @@ export function CollaborationsFeaturedSection() {
   const { permalink, title, description } = luangPrabangHighlight;
 
   return (
-    <section className="border-b border-[var(--green-border)] bg-[var(--beige)]">
+    <section className="border-t border-b border-[var(--green-border)] bg-[var(--beige)]">
       <div className="w-full px-6 py-16 sm:px-8 sm:py-24 lg:px-12">
         <div className="grid grid-cols-1 gap-12 xl:grid-cols-3 xl:gap-6 xl:items-start">
           {/* Left — reel (~⅓) */}
