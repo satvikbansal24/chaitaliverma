@@ -6,6 +6,7 @@ import { site } from "@/content/site";
 const nav = [
   { href: "/", label: "Home" },
   { href: "/instagram", label: "Instagram" },
+  { href: "/highlights", label: "Highlights" },
   { href: "/collaborations", label: "Collaborations" },
   { href: "/media-kit", label: "Media kit" },
   { href: "/about", label: "About" },

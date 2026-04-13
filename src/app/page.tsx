@@ -192,14 +192,14 @@ export default function Home() {
         <WritingSection />
       </NumberedSection>
 
-      {/* 05 Travel better */}
+      {/* 05 Explore like a Local */}
       <NumberedSection
         id="travel-better"
         number="05"
         title={
           <>
-            <span className="text-[var(--green-muted)]">Travel </span>
-            <span className="text-[var(--green-mid)]">better</span>
+            <span className="text-[var(--green-muted)]">Explore like a </span>
+            <span className="text-[var(--green-mid)]">Local</span>
           </>
         }
         tone="beige"

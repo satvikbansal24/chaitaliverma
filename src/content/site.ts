@@ -264,6 +264,54 @@ export type TravelReel = {
   excerpt: string;
 };
 
+/**
+ * Highlights page map — `svgId` must match a `path id` in `public/world-map.svg`.
+ * Add entries as you publish more country highlights on Instagram.
+ */
+export type HighlightMapCountry = {
+  svgId: string;
+  name: string;
+  href: string;
+};
+
+export const highlightMapCountries: HighlightMapCountry[] = [
+  {
+    svgId: "croatia",
+    name: "Croatia",
+    href: "https://www.instagram.com/stories/highlights/18107984437661229/",
+  },
+  {
+    svgId: "egypt",
+    name: "Egypt",
+    href: "https://www.instagram.com/stories/highlights/18051755138312544/",
+  },
+  {
+    svgId: "india",
+    name: "India",
+    href: "https://www.instagram.com/stories/highlights/18052960267523319/",
+  },
+  {
+    svgId: "sri lanka",
+    name: "Sri Lanka",
+    href: "https://www.instagram.com/stories/highlights/18079595791740922/",
+  },
+  {
+    svgId: "malaysia",
+    name: "Malaysia",
+    href: "https://www.instagram.com/stories/highlights/18314660851094209/",
+  },
+  {
+    svgId: "usa",
+    name: "USA",
+    href: "https://www.instagram.com/stories/highlights/17883353025524103/",
+  },
+  {
+    svgId: "italy",
+    name: "Italy",
+    href: "https://www.instagram.com/stories/highlights/18002339657809833/",
+  },
+];
+
 export const travelReels: TravelReel[] = [
   {
     slug: "luang-prabang",
@@ -335,7 +383,7 @@ export const travelBetter: {
   partners: [
     {
       id: "airbnb",
-      cardLabel: "Find stays on Airbnb",
+      cardLabel: "Favorite AirBnb Recommendations",
       href: "https://www.airbnb.com/",
       imageSrc:
         "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
@@ -343,7 +391,7 @@ export const travelBetter: {
     },
     {
       id: "getyourguide",
-      cardLabel: "Tours & tickets on GetYourGuide",
+      cardLabel: "Experience deeply with GetYourGuide",
       href: "https://www.getyourguide.com/",
       imageSrc:
         "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80",
