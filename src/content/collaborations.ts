@@ -29,11 +29,17 @@ export const collaborationSpotlights = [
   },
 ] as const;
 
+export const luangPrabangReelStats = [
+  { label: "Views", value: "25M+" },
+  { label: "Likes", value: "1.4M+" },
+  { label: "Shares", value: "1.3M+" },
+] as const;
+
 export const luangPrabangHighlight = {
   permalink: "https://www.instagram.com/reels/DHgJ840J3DA/",
   title: "Luang Prabang: Standout Reel",
   description:
-    "Recent work for AirAsia spotlighting Luang Prabang, a UNESCO World Heritage Site in Laos. The reel passed roughly 25M views, with on the order of 1.4M likes and 1.3M shares: place-first storytelling and visuals that helped audiences discover a city many had never heard of. The CEO of AirAsia also used it as a case study at the World Tourism Conference.",
+    "Recent work for AirAsia spotlighting Luang Prabang, a UNESCO World Heritage Site in Laos. Place-first storytelling and visuals helped audiences discover a city many had never heard of. The CEO of AirAsia also used it as a case study at the World Tourism Conference.",
 } as const;
 
 /** Field-notes style list for the Luang Prabang column; optional `mention` renders as a handle chip. */

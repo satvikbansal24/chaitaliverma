@@ -5,6 +5,7 @@ import { InstagramReelEmbed } from "@/components/instagram-reel-embed";
 import { LuangPrabangThingsToDo } from "@/components/luang-prabang-things-to-do";
 import {
   luangPrabangHighlight,
+  luangPrabangReelStats,
   luangPrabangThingsToDo,
 } from "@/content/collaborations";
 
@@ -30,7 +31,22 @@ export function CollaborationsFeaturedSection() {
             <h3 className={collaborationColumnHeadingClass}>
               {title}
             </h3>
-            <p className="mt-6 text-base leading-relaxed text-[var(--green-muted)] sm:text-lg">
+            <div className="mt-4 flex max-w-md flex-nowrap gap-2">
+              {luangPrabangReelStats.map((s) => (
+                <div
+                  key={s.label}
+                  className="min-w-0 flex-1 rounded-xl border border-[var(--green-border)] bg-[var(--paper)] px-2 py-2 shadow-sm"
+                >
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--green-muted)]">
+                    {s.label}
+                  </p>
+                  <p className="mt-1 font-serif text-lg font-semibold leading-tight text-[var(--green-deep)] sm:text-xl">
+                    {s.value}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 text-base leading-relaxed text-[var(--green-muted)] sm:text-lg">
               {description}
             </p>
             <LuangPrabangThingsToDo items={luangPrabangThingsToDo} />
