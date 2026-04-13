@@ -12,7 +12,6 @@ const nav = [
   { href: "/highlights", label: "Highlights" },
   { href: "/collaborations", label: "Collaborations" },
   { href: "/media-kit", label: "Media kit" },
-  { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ] as const;
 

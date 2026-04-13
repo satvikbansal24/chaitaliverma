@@ -13,10 +13,11 @@ export type HeroImage = {
 export const site = {
   title: "Chaitali Verma",
   roleLine: "Food · Travel · Culture",
-  /** Home hero: short intro (full story on About / media kit) */
+  /** Home hero: short intro (full story on media kit) */
   heroParagraphs: [
-    "I'm Chaitali Verma: I travel slow and offbeat, chasing immersive local moments: people, food, and the stories behind each place (from Sri Lanka to Italy to Vietnam and beyond).",
-    "Bold visuals and real human stories. I share destinations through culture and community, mindful exploration that lifts heritage and local voices.",
+    "Hi, I'm Chaitali! A travel content creator who documents and encourages her audience to explore popular destinations differently through offbeat activities, local culture and slow travelling.",
+    "For me, the people and their heritage are the true heartbeat of a place, and it is in highlighting these that I find the most joy in.",
+    "For me, people and their heritage are the true heartbeat of any place. Whether it's planting paddy in Vietnam, singing old Egyptian songs with locals, dancing with strangers in Italy, or learning the centuries-old Degh Bhapka process in Kannauj, my work celebrates travel as both adventure and cultural education.",
   ] as const,
   /**
    * Hero right panel: order [0] = large featured (clearest photo), [1–4] = 2×2 grid (next clearest first).
@@ -230,6 +231,12 @@ export const servicePillars = [
     body: "Airlines, hospitality, and gear where the story fits the journey: campaigns and long-form work with a lived, human lens.",
     href: "/instagram#experiential",
   },
+  {
+    n: 4,
+    title: "Food",
+    body: "Kopitiams, regional must-tries, bakeries, and the stories behind every plate: where I eat and what I order, from KL to Goa and beyond.",
+    href: "/instagram#food",
+  },
 ] as const;
 
 export const mediaKit = {
@@ -336,18 +343,18 @@ export const travelReels: TravelReel[] = [
       "Island light, quiet coves, and the kind of coastal day that lingers…",
   },
   {
-    slug: "kenya-beyond-masai-mara",
-    permalink: "https://www.instagram.com/reel/DQ1ZE2LEtSs/",
-    headline: "Kenya beyond Masai Mara",
+    slug: "varkala-kerala",
+    permalink: "https://www.instagram.com/reel/DDuLdTnzQw_/",
+    headline: "Varkala, India",
     excerpt:
-      "If you’re only visiting Masai Mara, you’re missing out: Hell’s Gate, Sheldrick elephants, Watamu, and Nairobi: loud, layered, and alive. Offbeat gems & hidden corners in the weeks ahead…",
+      "A dreamy little town for slow living: cliff beaches, food, and warmth. A great alternative to Goa for nature (not nightlife). I took this trip with @houseofsurfbytripright: yoga, pottery, surfing, boating, and more.",
   },
   {
-    slug: "dahab-egypt-insta360",
-    permalink: "https://www.instagram.com/reel/DP3tHKOkgGo/",
-    headline: "Dahab, Egypt",
+    slug: "nairobi-cbd",
+    permalink: "https://www.instagram.com/reels/CvmeKlBKv16/",
+    headline: "Nairobi, Kenya",
     excerpt:
-      "Drone-looking shots, self-shot with the Insta360 X5. No crew, no drone, just solo-travel tech magic by the Red Sea…",
+      "A trailer of what’s to come. Nairobi’s CBD is busy, but it’s also home to some of the city’s oldest buildings, businesses, and people: street life, shoe shines, and the real pulse of the city. Concept & creative direction by me; videography by @the20th.photography.",
   },
 ];
 
@@ -368,11 +375,75 @@ export const heritagePosts: TravelReel[] = [
       "Degh Bhapka distillation, fair work, and fragrance the way India has long done it (@boondfragrances). Use code CHAIROSE for a special discount.",
   },
   {
-    slug: "anjuna-flea-market-goa",
-    permalink: "https://www.instagram.com/p/DV6TPOJEog6/",
-    headline: "Anjuna’s Wednesday flea market",
+    slug: "choon-paan-sri-lanka",
+    permalink: "https://www.instagram.com/reel/DKUW_cDSWrG/",
+    headline: "Choon Paans in Sri Lanka",
     excerpt:
-      "A market rooted in the 1960s traveller trade: tribes from across states, neon merch, shacks, and tapestries. One of Goa’s best, every Wednesday.",
+      "Beethoven from a tuk-tuk: Sri Lanka’s mobile snack vans, tea-time tradition, and home-baked treats. Almost lost to chains and a music ban until they roared back in COVID. Sugary breads, egg rolls, potato snacks, and a heritage worth keeping alive.",
+  },
+];
+
+/** Experiential Storytelling section on Social Media */
+export const experientialReels: TravelReel[] = [
+  {
+    slug: "mandalao-luang-prabang",
+    permalink: "https://www.instagram.com/reel/DG8QCpMpQ-Q/",
+    headline: "Mandalao Elephant Sanctuary, Luang Prabang",
+    excerpt:
+      "Walk with rescues in the forest: small groups, no bathing or riding. @mandalao_elephants limits daily visitors so elephants can relearn the wild. Book the full-day tour early; your fee supports care, not cruel photo ops.",
+  },
+  {
+    slug: "hipnoetic-wayanad-kerala",
+    permalink: "https://www.instagram.com/reels/C8CIiY9pOrp/",
+    headline: "Hipnoetic Stays, Wayanad, Kerala",
+    excerpt:
+      "A wholesome day with @hipnoeticstays: lotus ponds, unforgettable food, and hosts who go past language barriers. My favourite way to feel slow, local Kerala after almost a month in the state.",
+  },
+  {
+    slug: "arcadia-kampot-cambodia",
+    permalink: "https://www.instagram.com/reel/DHBU3_IpU19/",
+    headline: "Arcadia Backpackers, Kampot, Cambodia",
+    excerpt:
+      "A water-park hostel by the river: slides, kayaks, evening BBQ boat, river jumps, and foam parties. Dorms or private rooms; a little out of town—worth the trip from Phnom Penh or as a day visit.",
+  },
+  {
+    slug: "the-local-beat-goa",
+    permalink: "https://www.instagram.com/reel/DAlUis2KSRC/",
+    headline: "The Local Beat, Goa",
+    excerpt:
+      "DM @thelocalbeat_goa to book. An all-Goan crew builds rafts and platforms you leave behind—pristine coast, no geotagging. Still one of my favourite afternoons: the most Susegaad day on the water.",
+  },
+];
+
+/** Food section on Social Media */
+export const foodReels: TravelReel[] = [
+  {
+    slug: "hoko-whai-nam-kopitiam-kl",
+    permalink: "https://www.instagram.com/reel/DCRj7SsvRj9/",
+    headline: "Hoko Whai Nam Kopitiam, Kuala Lumpur",
+    excerpt:
+      "@hokowhainamkopitiam in Chinatown, KL: worth the wait for kaya toast and strong iced kopi. I reach for kopitiams over swanky cafes—you can get avocado toast anywhere, but this is the real deal.",
+  },
+  {
+    slug: "vietnam-must-try-foods",
+    permalink: "https://www.instagram.com/reels/DHqxddap2oC/",
+    headline: "Must-try foods in Vietnam",
+    excerpt:
+      "Banh xeo from a Hoi An cooking class, kem bo in Dalat, spring rolls everywhere, banh mi picks in Saigon, Hoi An, and Hanoi, Vietnamese pizza in Dalat—and the pistachio coconut latte on @flyairasia.in (zero sugar). Veg options at most stops.",
+  },
+  {
+    slug: "hello-to-the-queen-goa",
+    permalink: "https://www.instagram.com/reels/DDcBWM5zK-e/",
+    headline: "“Hello to the Queen,” Goa",
+    excerpt:
+      "The dessert I hunted on every menu after 14 years away from Goa—origins debatable, the joy is not. @shimonfalafelgoa in Arambol does it justice; don’t skip the falafel in pita. Filmed by @photoduffer_films.",
+  },
+  {
+    slug: "favourite-goan-bakeries",
+    permalink: "https://www.instagram.com/reels/C6LmVB7pEXo/",
+    headline: "My favourite Goan bakeries",
+    excerpt:
+      "Mr. Baker Panjim, Confetaria De 31 Janeiro Panjim, St Anthony Siolim, Joseph Mapusa—old bakeries with sweets and snacks at honest prices. Tell me yours.",
   },
 ];
 
@@ -384,6 +455,12 @@ export type TravelBetterPartner = {
   imageAlt: string;
 };
 
+/** GetYourGuide tile opens a modal; single smart link for iOS & Android app download. */
+export const getYourGuideModal = {
+  discountCode: "CHAITALIVERMA5",
+  appDownloadUrl: "https://gyg.me/chaitaliverma-app",
+} as const;
+
 /** Stays and experiences: swap `href` for your partner or referral URLs when ready. */
 export const travelBetter: {
   partners: TravelBetterPartner[];
@@ -392,7 +469,7 @@ export const travelBetter: {
     {
       id: "airbnb",
       cardLabel: "Favorite AirBnb Recommendations",
-      href: "https://www.airbnb.com/",
+      href: "https://creators.withairbnb.com/mypage/ChaitaliVerma",
       imageSrc:
         "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
       imageAlt: "A welcoming pool and patio at a vacation rental",
@@ -424,7 +501,7 @@ export const travelBetter: {
     {
       id: "sharedeasy",
       cardLabel: "Affordable living in NYC with SharedEasy",
-      href: "https://www.sharedeasy.com/",
+      href: "https://sharedeasy.club/creator-discount/?utm_source=creator&utm_medium=referral&utm_campaign=creators-discount&utm_content=chaitali",
       imageSrc:
         "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800&q=80",
       imageAlt: "New York City skyline over the East River",

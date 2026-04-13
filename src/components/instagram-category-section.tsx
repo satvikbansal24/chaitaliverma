@@ -14,6 +14,8 @@ type Props = {
   isFirst?: boolean;
   /** After shared PageHero: no top border on first section */
   belowPageHero?: boolean;
+  /** Three equal columns, block centered (e.g. Local Heritage with 3 reels) */
+  gridThreeCentered?: boolean;
 };
 
 const toneClass = {
@@ -32,8 +34,13 @@ export function InstagramCategorySection({
   linkLabel = "Watch on Instagram →",
   isFirst = false,
   belowPageHero = false,
+  gridThreeCentered = false,
 }: Props) {
   const topBorder = isFirst && !belowPageHero ? "border-t" : "";
+
+  const gridClass = gridThreeCentered
+    ? "mt-12 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8 md:max-w-5xl md:mx-auto"
+    : "mt-12 grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-8 xl:grid-cols-4 xl:gap-6";
 
   return (
     <section
@@ -45,7 +52,7 @@ export function InstagramCategorySection({
           {title}
         </h2>
 
-        <div className="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-8 xl:grid-cols-4 xl:gap-6">
+        <div className={gridClass}>
           {items.map((reel) => (
             <article
               key={reel.slug}

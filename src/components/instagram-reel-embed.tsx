@@ -30,11 +30,12 @@ export function InstagramReelEmbed({
   const path = parseInstagramEmbedPath(permalink);
   if (!path) return null;
 
+  /** Social Media grid: shorter iframe than before (~740px); IG controls comments inside embed—raise these if any reel shows an inner scrollbar. */
   const compactHeight =
     compact && collaborations
       ? "h-[min(980px,96vh)] xl:h-[min(1080px,97vh)]"
       : compact
-        ? "h-[min(740px,88vh)] xl:h-[min(780px,90vh)]"
+        ? "h-[min(600px,74vh)] sm:h-[min(620px,76vh)] xl:h-[min(640px,78vh)]"
         : null;
 
   const defaultHeight =

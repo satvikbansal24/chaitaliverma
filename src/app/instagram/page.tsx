@@ -1,10 +1,16 @@
 import { InstagramCategorySection } from "@/components/instagram-category-section";
 import { PageHero } from "@/components/page-hero";
-import { heritagePosts, travelReels } from "@/content/site";
+import {
+  experientialReels,
+  foodReels,
+  heritagePosts,
+  travelReels,
+} from "@/content/site";
 
 export const metadata = {
   title: "Social Media",
-  description: "Destinations, local heritage, and experiential storytelling: reels from Chaitali Verma.",
+  description:
+    "Destinations, heritage, food, and experiential storytelling: reels from Chaitali Verma.",
 };
 
 export default function InstagramPage() {
@@ -26,12 +32,20 @@ export default function InstagramPage() {
         items={heritagePosts}
         tone="paper"
         linkLabel="View on Instagram →"
+        gridThreeCentered
       />
       <InstagramCategorySection
         id="experiential"
         title="Experiential Storytelling"
-        items={heritagePosts}
+        items={experientialReels}
         tone="beige"
+        linkLabel="View on Instagram →"
+      />
+      <InstagramCategorySection
+        id="food"
+        title="Food - Markets, Meals & Must-Tries"
+        items={foodReels}
+        tone="paper"
         linkLabel="View on Instagram →"
       />
     </>
