@@ -216,16 +216,19 @@ export const servicePillars = [
     n: 1,
     title: "Destinations",
     body: "Itineraries with soul—markets, heritage walks, and under-sung cities (not just icons). Example: a full Luang Prabang guide with ethical elephant experiences and local makers.",
+    href: "/instagram#postcards",
   },
   {
     n: 2,
     title: "Local Heritage",
     body: "Bakeries, cacao, regional plates, and the people behind recipes—styled like editorial travel features.",
+    href: "/instagram#heritage",
   },
   {
     n: 3,
     title: "Experiential Storytelling",
     body: "Airlines, hospitality, and gear where the story fits the journey—campaigns and long-form work with a lived, human lens.",
+    href: "/instagram#experiential",
   },
 ] as const;
 
@@ -284,6 +287,11 @@ export const highlightMapCountries: HighlightMapCountry[] = [
     svgId: "egypt",
     name: "Egypt",
     href: "https://www.instagram.com/stories/highlights/18051755138312544/",
+  },
+  {
+    svgId: "finland",
+    name: "Finland",
+    href: "https://www.instagram.com/stories/highlights/17873655867475837/",
   },
   {
     svgId: "india",
@@ -396,6 +404,30 @@ export const travelBetter: {
       imageSrc:
         "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80",
       imageAlt: "Open road through mountains at golden hour",
+    },
+    {
+      id: "kiwitaxi",
+      cardLabel: "Easy Airport transfers with KiwiTaxi",
+      href: "https://kiwitaxi.com/",
+      imageSrc:
+        "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80",
+      imageAlt: "Airport terminal and travelers",
+    },
+    {
+      id: "hostelworld",
+      cardLabel: "HostelWorld - Make the most of your Solo trip!",
+      href: "https://www.hostelworld.com/",
+      imageSrc:
+        "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
+      imageAlt: "Cozy shared room with bed and warm lamp light",
+    },
+    {
+      id: "sharedeasy",
+      cardLabel: "Affordable living in NYC with SharedEasy",
+      href: "https://www.sharedeasy.com/",
+      imageSrc:
+        "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800&q=80",
+      imageAlt: "New York City skyline over the East River",
     },
   ],
 };

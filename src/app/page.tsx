@@ -162,16 +162,21 @@ export default function Home() {
       >
         <div className="grid gap-6 md:grid-cols-3">
           {servicePillars.map((s) => (
-            <div
+            <Link
               key={s.n}
-              className="rounded-2xl border border-[var(--green-border)] bg-[var(--paper)] p-6 shadow-sm"
+              href={s.href}
+              className="group block rounded-2xl border border-[var(--green-border)] bg-[var(--paper)] p-6 shadow-sm transition hover:border-[var(--green-mid)]/40 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--green-deep)]"
             >
-              <div className="flex size-11 items-center justify-center rounded-full bg-[var(--green-deep)] font-serif text-lg font-semibold text-[var(--beige)]">
+              <div className="flex size-11 items-center justify-center rounded-full bg-[var(--green-deep)] font-serif text-lg font-semibold text-[var(--beige)] transition group-hover:bg-[var(--green-mid)]">
                 {s.n}
               </div>
-              <h3 className="mt-5 font-semibold text-[var(--green-deep)]">{s.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-[var(--green-muted)]">{s.body}</p>
-            </div>
+              <h3 className="mt-5 font-serif text-xl font-semibold leading-snug text-[var(--green-deep)] sm:text-2xl">
+                {s.title}
+              </h3>
+              <p className="mt-3 text-base leading-relaxed text-[var(--green-muted)] sm:text-lg">
+                {s.body}
+              </p>
+            </Link>
           ))}
         </div>
         <Link
