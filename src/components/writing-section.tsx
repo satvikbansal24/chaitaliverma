@@ -2,7 +2,7 @@ import Image from "next/image";
 import { featuredWriting } from "@/content/site";
 
 /**
- * Home “What I write” — image + card; whole block links to the article (no nested anchors).
+ * Home “What I write”: image + card; whole block links to the article (no nested anchors).
  * Image uses intrinsic dimensions + object-contain (no cropping).
  */
 export function WritingSection() {

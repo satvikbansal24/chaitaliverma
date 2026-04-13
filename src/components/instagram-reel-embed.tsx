@@ -46,7 +46,7 @@ export function InstagramReelEmbed({
         compact ? "max-w-none" : "max-w-[420px]"
       }`}
     >
-      {/* Don’t cap height below the iframe — that forces scroll inside the iframe */}
+      {/* Don’t cap height below the iframe; that forces scroll inside the iframe */}
       <div className="relative w-full">
         <iframe
           src={`https://www.instagram.com/${path}/embed/`}

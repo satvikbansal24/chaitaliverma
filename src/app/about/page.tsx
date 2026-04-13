@@ -24,7 +24,7 @@ export default function AboutPage() {
           <p className="font-serif text-xl leading-relaxed text-[var(--green-deep)] sm:text-2xl lg:text-3xl">
             “{site.quote}”
           </p>
-          <p className="mt-5 text-base text-[var(--green-muted)] sm:text-lg">— {site.creatorName}</p>
+          <p className="mt-5 text-base text-[var(--green-muted)] sm:text-lg">- {site.creatorName}</p>
         </blockquote>
         <div className="mt-12 flex flex-wrap gap-4">
           <Link

@@ -8,7 +8,7 @@ import { reachStats, servicePillars, site } from "@/content/site";
 export default function Home() {
   return (
     <>
-      {/* Split hero — full-bleed green; photo grid uses uniform gaps (green shows as gutters) */}
+      {/* Split hero: full-bleed green; photo grid uses uniform gaps (green shows as gutters) */}
       <section className="border-b border-[var(--green-border)] bg-[var(--green-deep)]">
         <div className="grid min-h-[min(100vh,880px)] lg:grid-cols-2">
           <div className="flex flex-col justify-center px-6 py-16 text-white sm:px-8 lg:px-12 lg:py-20 xl:px-16">
@@ -179,12 +179,6 @@ export default function Home() {
             </Link>
           ))}
         </div>
-        <Link
-          href="/media-kit"
-          className="mt-10 inline-block text-sm font-semibold text-[var(--green-mid)] underline-offset-4 hover:underline"
-        >
-          Full media kit →
-        </Link>
       </NumberedSection>
 
       {/* 04 What I write */}
@@ -219,7 +213,7 @@ export default function Home() {
             Let&apos;s create something together
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-white/85 sm:text-base">
-            Brands, tourism boards, and mission-aligned teams—share your brief and timeline.
+            Brands, tourism boards, and mission-aligned teams: share your brief and timeline.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Link

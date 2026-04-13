@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Fragment } from "react";
 import { site } from "@/content/site";
 
-/** Only routes with their own page — Writing & Services live on Home. */
+/** Only routes with their own page; Writing & Services live on Home. */
 const nav = [
   { href: "/", label: "Home" },
   { href: "/instagram", label: "Instagram" },

@@ -3,7 +3,7 @@ import { heritagePosts, travelReels } from "@/content/site";
 
 export const metadata = {
   title: "Instagram",
-  description: "Destinations, local heritage, and experiential storytelling—reels from Chaitali Verma.",
+  description: "Destinations, local heritage, and experiential storytelling: reels from Chaitali Verma.",
 };
 
 export default function InstagramPage() {

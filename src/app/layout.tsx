@@ -19,7 +19,7 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   title: {
-    default: `${site.title} — Travel & food`,
+    default: `${site.title}: Travel & food`,
     template: `%s · ${site.title}`,
   },
   description: site.description,

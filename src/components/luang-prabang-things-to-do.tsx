@@ -2,7 +2,7 @@ import { collaborationColumnHeadingClass } from "@/components/collaborations-hea
 import type { LuangPrabangThing } from "@/content/collaborations";
 
 /**
- * Field-notes checklist — heading full width; items in two columns (row order: 1–2, 3–4, …).
+ * Field-notes checklist: heading full width; items in two columns (row order: 1–2, 3–4, …).
  */
 export function LuangPrabangThingsToDo({ items }: { items: LuangPrabangThing[] }) {
   return (

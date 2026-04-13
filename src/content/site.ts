@@ -1,8 +1,8 @@
 /**
- * Site copy — Chaitali Verma portfolio. Edit metrics, links, and images here.
+ * Site copy: Chaitali Verma portfolio. Edit metrics, links, and images here.
  */
 
-/** Hero collage — first item is the large panel; put your clearest / highest-res shot there. */
+/** Hero collage: first item is the large panel; put your clearest / highest-res shot there. */
 export type HeroImage = {
   src: string;
   alt: string;
@@ -13,13 +13,13 @@ export type HeroImage = {
 export const site = {
   title: "Chaitali Verma",
   roleLine: "Food · Travel · Culture",
-  /** Home hero — short intro (full story on About / media kit) */
+  /** Home hero: short intro (full story on About / media kit) */
   heroParagraphs: [
-    "I'm Chaitali Verma—I travel slow and offbeat, chasing immersive local moments: people, food, and the stories behind each place (from Sri Lanka to Italy to Vietnam and beyond).",
-    "Bold visuals and real human stories. I share destinations through culture and community—mindful exploration that lifts heritage and local voices.",
+    "I'm Chaitali Verma: I travel slow and offbeat, chasing immersive local moments: people, food, and the stories behind each place (from Sri Lanka to Italy to Vietnam and beyond).",
+    "Bold visuals and real human stories. I share destinations through culture and community, mindful exploration that lifts heritage and local voices.",
   ] as const,
   /**
-   * Hero right panel — order: [0] = large featured (clearest photo), [1–4] = 2×2 grid (next clearest first).
+   * Hero right panel: order [0] = large featured (clearest photo), [1–4] = 2×2 grid (next clearest first).
    * Files in public/
    */
   heroImages: [
@@ -35,9 +35,9 @@ export const site = {
   ] as const satisfies readonly HeroImage[],
   tagline: "Places tasted slowly, and the people who make them unforgettable.",
   description:
-    "Chaitali shares travel and food through reels, photos, and long-form notes—markets at dawn, family recipes, and coastlines that feel like a pause.",
+    "Chaitali shares travel and food through reels, photos, and long-form notes: markets at dawn, family recipes, and coastlines that feel like a pause.",
   aboutLead:
-    "From neighborhood bakeries to jungle treks and cities you haven’t seen on a postcard—stories stay grounded in the people who make each place feel real.",
+    "From neighborhood bakeries to jungle treks and cities you haven’t seen on a postcard. Stories stay grounded in the people who make each place feel real.",
   creatorName: "Chaitali Verma",
   email: "vermachaitali@gmail.com",
   instagramHandle: "@chaitali.verma",
@@ -47,26 +47,26 @@ export const site = {
     newsletter: "https://example.com/newsletter",
   },
   quote:
-    "I’m drawn to the in-between moments—the ferry, the kitchen table, the conversation that turns a trip into a story worth returning to.",
+    "I’m drawn to the in-between moments: the ferry, the kitchen table, the conversation that turns a trip into a story worth returning to.",
   /** About band (home section) */
   aboutKicker: "About",
   aboutHeadline: "Heritage, food & people",
   aboutBody:
-    "From neighborhood bakeries to jungle treks and cities you haven't seen on a postcard—stories stay grounded in the people who make each place feel real.",
+    "From neighborhood bakeries to jungle treks and cities you haven't seen on a postcard. Stories stay grounded in the people who make each place feel real.",
 } as const;
 
-/** Home “What I write” — long-form editorial (add more entries later if needed). */
+/** Home “What I write”: long-form editorial (add more entries later if needed). */
 export const featuredWriting = {
   title: "Goan Food You Cannot Miss When in Goa",
   publication: "Soul Travelling",
   url: "https://www.soultravelling.in/post/goan-food-you-cannot-miss-when-in-goa",
   excerpt:
-    "Beyond the beach bars—a guide to Goan food that carries the state's stories, from chorizo and cafreal to xacuti and bolo sans rival.",
-  /** Optional hero image — file in public/ (intrinsic pixels; layout scales, no crop) */
+    "Beyond the beach bars: a guide to Goan food that carries the state's stories, from chorizo and cafreal to xacuti and bolo sans rival.",
+  /** Optional hero image: file in public/ (intrinsic pixels; layout scales, no crop) */
   image: "/writing-goan-food.png",
   imageWidth: 1024,
   imageHeight: 1024,
-  imageAlt: "Coils of Goan chouriço (chorizo)—spiced, cured sausages tied in strings",
+  imageAlt: "Coils of Goan chouriço (chorizo), spiced, cured sausages tied in strings",
 } as const;
 
 export type StoryTag = "travel" | "food" | "community" | "people";
@@ -81,7 +81,7 @@ export type Story = {
   year: number;
 };
 
-/** Home “Featured work” grid — portfolio highlights */
+/** Home “Featured work” grid: portfolio highlights */
 export type PortfolioItem = {
   slug: string;
   title: string;
@@ -101,7 +101,7 @@ export const portfolioFeatured: PortfolioItem[] = [
     slug: "luang-prabang",
     title: "Luang Prabang blew me away",
     excerpt:
-      "A full Southeast Asia guide—ethical elephant experiences, golden hour by the river, and local makers you’ll want to remember.",
+      "A full Southeast Asia guide: ethical elephant experiences, golden hour by the river, and local makers you’ll want to remember.",
     tags: ["travel", "community", "food"],
     platform: "Instagram",
     year: 2025,
@@ -148,7 +148,7 @@ export const stories: Story[] = [
     slug: "coastal-islands",
     title: "Coastlines & island light",
     excerpt:
-      "Notes from slow days by the water—ferry timetables, hidden coves, and the meals that taste better after a swim.",
+      "Notes from slow days by the water: ferry timetables, hidden coves, and the meals that taste better after a swim.",
     tags: ["travel", "community"],
     href: "/stories",
     platform: "YouTube",
@@ -158,7 +158,7 @@ export const stories: Story[] = [
     slug: "kitchen-hospitality",
     title: "Kitchens as hospitality",
     excerpt:
-      "When a host opens their stove, the story isn’t only the recipe—it’s who gets fed first, and why it matters.",
+      "When a host opens their stove, the story isn’t only the recipe: it’s who gets fed first, and why it matters.",
     tags: ["food", "people", "community"],
     href: "/stories",
     platform: "Newsletter",
@@ -168,7 +168,7 @@ export const stories: Story[] = [
     slug: "destination-partnerships",
     title: "Working with places, not backdrops",
     excerpt:
-      "What values-aligned travel storytelling looks like on the ground—for brands, DMOs, and small operators.",
+      "What values-aligned travel storytelling looks like on the ground: for brands, DMOs, and small operators.",
     tags: ["travel", "people"],
     href: "/media-kit",
     platform: "Blog",
@@ -178,7 +178,7 @@ export const stories: Story[] = [
     slug: "field-notes",
     title: "Field notes from the next trip",
     excerpt:
-      "A running list of rituals, sounds, and meals worth saving—before they become a reel or a longer piece.",
+      "A running list of rituals, sounds, and meals worth saving before they become a reel or a longer piece.",
     tags: ["travel", "food"],
     href: "/instagram#postcards",
     platform: "Instagram",
@@ -215,19 +215,19 @@ export const servicePillars = [
   {
     n: 1,
     title: "Destinations",
-    body: "Itineraries with soul—markets, heritage walks, and under-sung cities (not just icons). Example: a full Luang Prabang guide with ethical elephant experiences and local makers.",
+    body: "Itineraries with soul: markets, heritage walks, and under-sung cities (not just icons). Example: a full Luang Prabang guide with ethical elephant experiences and local makers.",
     href: "/instagram#postcards",
   },
   {
     n: 2,
     title: "Local Heritage",
-    body: "Bakeries, cacao, regional plates, and the people behind recipes—styled like editorial travel features.",
+    body: "Bakeries, cacao, regional plates, and the people behind recipes, styled like editorial travel features.",
     href: "/instagram#heritage",
   },
   {
     n: 3,
     title: "Experiential Storytelling",
-    body: "Airlines, hospitality, and gear where the story fits the journey—campaigns and long-form work with a lived, human lens.",
+    body: "Airlines, hospitality, and gear where the story fits the journey: campaigns and long-form work with a lived, human lens.",
     href: "/instagram#experiential",
   },
 ] as const;
@@ -239,14 +239,14 @@ export const mediaKit = {
       "Slow travel, regional food, ethical storytelling, boutique hospitality, community-led tourism",
   },
   metrics: [
-    { label: "Combined reach", value: "—", hint: "update when ready" },
-    { label: "Instagram", value: "—", hint: "followers + engagement" },
-    { label: "Avg. watch time (video)", value: "—", hint: "reels & long-form" },
+    { label: "Combined reach", value: "-", hint: "update when ready" },
+    { label: "Instagram", value: "-", hint: "followers + engagement" },
+    { label: "Avg. watch time (video)", value: "-", hint: "reels & long-form" },
   ],
   collaborationTypes: [
     {
       title: "Destination & experience features",
-      body: "Reels, photo essays, and itineraries that foreground hosts, makers, and everyday rituals—never generic skyline filler.",
+      body: "Reels, photo essays, and itineraries that foreground hosts, makers, and everyday rituals, never generic skyline filler.",
     },
     {
       title: "Food & craft storytelling",
@@ -254,7 +254,7 @@ export const mediaKit = {
     },
     {
       title: "Brand & hotel partnerships",
-      body: "Campaigns where the property or product is part of a lived narrative—not a logo pasted on a vista.",
+      body: "Campaigns where the property or product is part of a lived narrative, not a logo pasted on a vista.",
     },
   ],
   pastPartners: ["Add partners as you confirm"],
@@ -268,7 +268,7 @@ export type TravelReel = {
 };
 
 /**
- * Highlights page map — `svgId` must match a `path id` in `public/world-map.svg`.
+ * Highlights page map: `svgId` must match a `path id` in `public/world-map.svg`.
  * Add entries as you publish more country highlights on Instagram.
  */
 export type HighlightMapCountry = {
@@ -326,7 +326,7 @@ export const travelReels: TravelReel[] = [
     permalink: "https://www.instagram.com/reel/DHgJ840J3DA/",
     headline: "Luang Prabang, Laos",
     excerpt:
-      "Golden hour in Laos—temples, the river, and the slow rhythm of the old town…",
+      "Golden hour in Laos: temples, the river, and the slow rhythm of the old town…",
   },
   {
     slug: "basina-croatia",
@@ -340,39 +340,39 @@ export const travelReels: TravelReel[] = [
     permalink: "https://www.instagram.com/reel/DQ1ZE2LEtSs/",
     headline: "Kenya beyond Masai Mara",
     excerpt:
-      "If you’re only visiting Masai Mara, you’re missing out—Hell’s Gate, Sheldrick elephants, Watamu, and Nairobi: loud, layered, and alive. Offbeat gems & hidden corners in the weeks ahead…",
+      "If you’re only visiting Masai Mara, you’re missing out: Hell’s Gate, Sheldrick elephants, Watamu, and Nairobi: loud, layered, and alive. Offbeat gems & hidden corners in the weeks ahead…",
   },
   {
     slug: "dahab-egypt-insta360",
     permalink: "https://www.instagram.com/reel/DP3tHKOkgGo/",
     headline: "Dahab, Egypt",
     excerpt:
-      "Drone-looking shots—self-shot with the Insta360 X5. No crew, no drone, just solo-travel tech magic by the Red Sea…",
+      "Drone-looking shots, self-shot with the Insta360 X5. No crew, no drone, just solo-travel tech magic by the Red Sea…",
   },
 ];
 
-/** Communities, craft & heritage — Instagram posts (reels or feed) */
+/** Communities, craft & heritage: Instagram posts (reels or feed) */
 export const heritagePosts: TravelReel[] = [
   {
     slug: "gucchi-kashmir-pahalgam",
     permalink: "https://www.instagram.com/p/DVQqIr2iPu-/",
     headline: "Gucchi & Kashmiri produce",
     excerpt:
-      "Why “exotic” gets hype while our own heritage produce waits—the rare Gucchi mushroom, the communities behind it, and a menu in Pahalgam that champions local Kashmiri food.",
+      "Why “exotic” gets hype while our own heritage produce waits: the rare Gucchi mushroom, the communities behind it, and a menu in Pahalgam that champions local Kashmiri food.",
   },
   {
     slug: "boond-kannauj-rose",
     permalink: "https://www.instagram.com/p/DQ6zEOiiMt9/",
-    headline: "Rose water, the old way — Kannauj",
+    headline: "Rose water, the old way: Kannauj",
     excerpt:
-      "Degh Bhapka distillation, fair work, and fragrance the way India has long done it—@boondfragrances. Use code CHAIROSE for a special discount.",
+      "Degh Bhapka distillation, fair work, and fragrance the way India has long done it (@boondfragrances). Use code CHAIROSE for a special discount.",
   },
   {
     slug: "anjuna-flea-market-goa",
     permalink: "https://www.instagram.com/p/DV6TPOJEog6/",
     headline: "Anjuna’s Wednesday flea market",
     excerpt:
-      "A market rooted in the 1960s traveller trade—tribes from across states, neon merch, shacks, and tapestries. One of Goa’s best, every Wednesday.",
+      "A market rooted in the 1960s traveller trade: tribes from across states, neon merch, shacks, and tapestries. One of Goa’s best, every Wednesday.",
   },
 ];
 
@@ -384,7 +384,7 @@ export type TravelBetterPartner = {
   imageAlt: string;
 };
 
-/** Stays and experiences—swap `href` for your partner or referral URLs when ready. */
+/** Stays and experiences: swap `href` for your partner or referral URLs when ready. */
 export const travelBetter: {
   partners: TravelBetterPartner[];
 } = {

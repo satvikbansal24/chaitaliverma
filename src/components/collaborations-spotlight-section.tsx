@@ -7,7 +7,7 @@ import { InstagramReelEmbed } from "@/components/instagram-reel-embed";
 import { collaborationSpotlights } from "@/content/collaborations";
 
 /**
- * Three spotlight collabs — same container width as Postcards; three columns on xl so each card is wider than a single postcard column.
+ * Three spotlight collabs: same container width as Postcards; three columns on xl so each card is wider than a single postcard column.
  */
 export function CollaborationsSpotlightSection() {
   return (
@@ -20,7 +20,7 @@ export function CollaborationsSpotlightSection() {
           Spotlight collaborations
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-base leading-relaxed text-[var(--green-muted)]">
-          Recent brand work—embedded reels below. Same full width as the four-column Postcards grid on Instagram; here you get three larger columns.
+          Recent brand work: embedded reels below. Same full width as the four-column Postcards grid on Instagram; here you get three larger columns.
         </p>
 
         <div className="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-8 xl:grid-cols-3 xl:gap-6">

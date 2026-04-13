@@ -7,10 +7,10 @@ type Props = {
   /** Full section heading, e.g. "Destinations - Postcards from the Road" */
   title: string;
   items: readonly TravelReel[];
-  /** beige | paper — matches former Postcards / Heritage bands */
+  /** beige | paper: matches former Postcards / Heritage bands */
   tone?: "beige" | "paper";
   linkLabel?: string;
-  /** First block on page — adds top border */
+  /** First block on page: adds top border */
   isFirst?: boolean;
 };
 

@@ -15,7 +15,7 @@ export function CollaborationsFeaturedSection() {
     <section className="border-t border-b border-[var(--green-border)] bg-[var(--beige)]">
       <div className="w-full px-6 py-16 sm:px-8 sm:py-24 lg:px-12">
         <div className="grid grid-cols-1 gap-12 xl:grid-cols-3 xl:gap-6 xl:items-start">
-          {/* Left — reel (~⅓) */}
+          {/* Left: reel (~⅓) */}
           <div className="min-w-0 xl:self-start xl:min-w-0">
             <InstagramReelEmbed
               permalink={permalink}
@@ -25,7 +25,7 @@ export function CollaborationsFeaturedSection() {
             />
           </div>
 
-          {/* Middle — caption + list (~⅓) */}
+          {/* Middle: caption + list (~⅓) */}
           <div className="flex min-w-0 flex-col justify-start border-t border-[var(--green-border)] pt-10 xl:self-start xl:border-t-0 xl:border-l xl:border-[var(--green-border)] xl:pl-8 xl:pt-0">
             <h3 className={collaborationColumnHeadingClass}>
               {title}
@@ -44,7 +44,7 @@ export function CollaborationsFeaturedSection() {
             </Link>
           </div>
 
-          {/* Right — other collabs (~⅓) */}
+          {/* Right: other collabs (~⅓) */}
           <CollaborationsBrandsColumn />
         </div>
       </div>

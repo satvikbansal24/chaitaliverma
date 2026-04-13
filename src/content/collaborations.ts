@@ -1,5 +1,5 @@
 /**
- * Collaborations page — spotlight reels, featured work, and brand partners.
+ * Collaborations page: spotlight reels, featured work, and brand partners.
  *
  * Other-collab logos: PNG files in `public/collabs/`. Each `logoSrc` must match the
  * filename exactly (case-sensitive on Linux deploys). Edit a path if your file name differs.
@@ -11,32 +11,32 @@ export const collaborationSpotlights = [
     headline: "Boond Fragrance",
     permalink: "https://www.instagram.com/reels/DJHX694zGtm/",
     excerpt:
-      "Heritage distillation and fragrance craft—stories rooted in tradition and fair work.",
+      "Heritage distillation and fragrance craft: stories rooted in tradition and fair work.",
   },
   {
     slug: "airasia",
     headline: "AirAsia",
     permalink: "https://www.instagram.com/reels/DE43GAApo29/",
     excerpt:
-      "Route and destination storytelling with airlines—experiences that feel lived-in, not staged.",
+      "Route and destination storytelling with airlines: experiences that feel lived-in, not staged.",
   },
   {
     slug: "zomunk",
     headline: "ZoMunk",
     permalink: "https://www.instagram.com/chaitali.verma/reel/DQZImVSkrx4",
     excerpt:
-      "Europe travel hacks and slow discovery—practical, cinematic, and audience-first.",
+      "Europe travel hacks and slow discovery: practical, cinematic, and audience-first.",
   },
 ] as const;
 
 export const luangPrabangHighlight = {
   permalink: "https://www.instagram.com/reels/DHgJ840J3DA/",
-  title: "Luang Prabang — Standout Reel",
+  title: "Luang Prabang: Standout Reel",
   description:
-    "Recent work for AirAsia spotlighting Luang Prabang, a UNESCO World Heritage Site in Laos. The reel passed roughly 25M views, with on the order of 1.4M likes and 1.3M shares—place-first storytelling and visuals that helped audiences discover a city many had never heard of. The CEO of AirAsia also used it as a case study at the World Tourism Conference.",
+    "Recent work for AirAsia spotlighting Luang Prabang, a UNESCO World Heritage Site in Laos. The reel passed roughly 25M views, with on the order of 1.4M likes and 1.3M shares: place-first storytelling and visuals that helped audiences discover a city many had never heard of. The CEO of AirAsia also used it as a case study at the World Tourism Conference.",
 } as const;
 
-/** Field-notes style list for the Luang Prabang column — optional `mention` renders as a handle chip. */
+/** Field-notes style list for the Luang Prabang column; optional `mention` renders as a handle chip. */
 export type LuangPrabangThing = {
   line: string;
   mention?: string;
@@ -60,9 +60,9 @@ export type CollaborationBrand = {
   name: string;
   /** Public URL under `public/` (e.g. `/collabs/airbnb.png`). */
   logoSrc: string;
-  /** Render larger — fine detail or small marks in the asset. */
+  /** Render larger: fine detail or small marks in the asset. */
   priority?: boolean;
-  /** Slightly smaller tile — busy or oversized marks. */
+  /** Slightly smaller tile: busy or oversized marks. */
   compact?: boolean;
   /** A bit smaller than default cloud size (not as small as `compact`). */
   compactSoft?: boolean;

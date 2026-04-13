@@ -4,7 +4,7 @@ import { CollaborationsSpotlightSection } from "@/components/collaborations-spot
 export const metadata = {
   title: "Collaborations",
   description:
-    "Brand collaborations, spotlight reels, and partners—Chaitali Verma.",
+    "Brand collaborations, spotlight reels, and partners: Chaitali Verma.",
 };
 
 export default function CollaborationsPage() {

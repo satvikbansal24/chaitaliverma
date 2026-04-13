@@ -3,7 +3,7 @@ import { collaborationColumnHeadingClass } from "@/components/collaborations-hea
 import type { CollaborationBrand } from "@/content/collaborations";
 import { collaborationBrands } from "@/content/collaborations";
 
-/** Non-priority logos — slightly smaller so priority marks stand out. */
+/** Non-priority logos: slightly smaller so priority marks stand out. */
 const cloudSizeClasses = [
   "h-11 sm:h-[3.25rem]",
   "h-[2.65rem] sm:h-12",
@@ -61,7 +61,7 @@ function BrandCell({
   );
 }
 
-/** Right-hand column — top-aligned with reel + caption (no stretch past row). */
+/** Right-hand column: top-aligned with reel + caption (no stretch past row). */
 export function CollaborationsBrandsColumn() {
   const brands = collaborationBrands;
   const n = brands.length;

@@ -13,7 +13,7 @@ export default function StoriesPage() {
           Discover stories
         </h1>
         <p className="mt-4 max-w-2xl text-[var(--green-muted)]">
-          Themes from Chaitali’s work—tap through to reels, the media kit, or longer notes as they go live.
+          Themes from Chaitali’s work: tap through to reels, the media kit, or longer notes as they go live.
         </p>
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {stories.map((story) => (
