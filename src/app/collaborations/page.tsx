@@ -1,5 +1,6 @@
 import { CollaborationsFeaturedSection } from "@/components/collaborations-featured-section";
 import { CollaborationsSpotlightSection } from "@/components/collaborations-spotlight-section";
+import { PAGE_SECTION_GAP, PageHero } from "@/components/page-hero";
 
 export const metadata = {
   title: "Collaborations",
@@ -10,7 +11,10 @@ export const metadata = {
 export default function CollaborationsPage() {
   return (
     <>
-      <CollaborationsFeaturedSection />
+      <PageHero kicker="For Brands & Partners" title="Collaborations" />
+      <div className={PAGE_SECTION_GAP}>
+        <CollaborationsFeaturedSection belowPageHero />
+      </div>
       <CollaborationsSpotlightSection />
     </>
   );

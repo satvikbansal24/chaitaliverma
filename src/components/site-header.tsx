@@ -8,7 +8,7 @@ import { site } from "@/content/site";
 /** Only routes with their own page; Writing & Services live on Home. */
 const nav = [
   { href: "/", label: "Home" },
-  { href: "/instagram", label: "Instagram" },
+  { href: "/instagram", label: "Social Media" },
   { href: "/highlights", label: "Highlights" },
   { href: "/collaborations", label: "Collaborations" },
   { href: "/media-kit", label: "Media kit" },

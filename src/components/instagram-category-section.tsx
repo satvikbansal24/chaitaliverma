@@ -12,12 +12,17 @@ type Props = {
   linkLabel?: string;
   /** First block on page: adds top border */
   isFirst?: boolean;
+  /** After shared PageHero: no top border on first section */
+  belowPageHero?: boolean;
 };
 
 const toneClass = {
   paper: "bg-[#f7f4ec]",
   beige: "bg-[var(--beige)]",
 };
+
+/** Equal space above the title (from line) and below the grid (to line): symmetric around each rule */
+const sectionInnerY = "py-10 sm:py-12";
 
 export function InstagramCategorySection({
   id,
@@ -26,13 +31,16 @@ export function InstagramCategorySection({
   tone = "paper",
   linkLabel = "Watch on Instagram →",
   isFirst = false,
+  belowPageHero = false,
 }: Props) {
+  const topBorder = isFirst && !belowPageHero ? "border-t" : "";
+
   return (
     <section
       id={id}
-      className={`border-b border-[var(--green-border)] ${toneClass[tone]} ${isFirst ? "border-t" : ""}`}
+      className={`border-b border-[var(--green-border)] ${toneClass[tone]} ${topBorder}`}
     >
-      <div className="w-full px-6 py-16 sm:px-8 sm:py-24 lg:px-12">
+      <div className={`w-full px-6 sm:px-8 lg:px-12 ${sectionInnerY}`}>
         <h2 className="text-center font-serif text-[clamp(1.75rem,4vw,2.25rem)] font-semibold leading-tight text-[var(--green-deep)]">
           {title}
         </h2>

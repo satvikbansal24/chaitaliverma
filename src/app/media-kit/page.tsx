@@ -1,17 +1,13 @@
 import Link from "next/link";
+import { PAGE_SECTION_GAP, PageHero } from "@/components/page-hero";
 import { mediaKit, site } from "@/content/site";
 
 export default function MediaKitPage() {
   return (
     <div className="border-b border-[var(--green-border)] bg-[var(--paper)]">
-      <div className="w-full px-6 py-16 sm:px-8 sm:py-24 lg:px-12">
-        <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[var(--green-deep)]">
-          For brands & partners
-        </p>
-        <h1 className="mt-4 font-serif text-4xl font-semibold text-[var(--green-deep)] sm:text-5xl lg:text-6xl">
-          Media kit
-        </h1>
-        <p className="mt-8 text-xl leading-relaxed text-[var(--green-muted)] sm:text-2xl">
+      <PageHero kicker="For Brands & Partners" title="Media Kit" />
+      <div className={`w-full px-6 sm:px-8 lg:px-12 pb-16 sm:pb-20 lg:pb-24 ${PAGE_SECTION_GAP}`}>
+        <p className="text-xl leading-relaxed text-[var(--green-muted)] sm:text-2xl">
           Snapshot for collaborators. Update metrics and partner names in{" "}
           <code className="rounded bg-[var(--beige)] px-1.5 py-0.5 text-base text-[var(--green-deep)] ring-1 ring-[var(--green-border)] sm:text-lg">
             src/content/site.ts

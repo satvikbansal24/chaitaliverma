@@ -9,12 +9,21 @@ import {
   luangPrabangThingsToDo,
 } from "@/content/collaborations";
 
-export function CollaborationsFeaturedSection() {
+type FeaturedProps = {
+  /** After PageHero: no top border, no extra top padding inside section */
+  belowPageHero?: boolean;
+};
+
+export function CollaborationsFeaturedSection({ belowPageHero = false }: FeaturedProps = {}) {
   const { permalink, title, description } = luangPrabangHighlight;
 
+  const topRule = belowPageHero ? "" : "border-t";
+  const innerY =
+    belowPageHero ? "pt-0 pb-16 sm:pb-24" : "py-16 sm:py-24";
+
   return (
-    <section className="border-t border-b border-[var(--green-border)] bg-[var(--beige)]">
-      <div className="w-full px-6 py-16 sm:px-8 sm:py-24 lg:px-12">
+    <section className={`${topRule} border-b border-[var(--green-border)] bg-[var(--beige)]`}>
+      <div className={`w-full px-6 sm:px-8 lg:px-12 ${innerY}`}>
         <div className="grid grid-cols-1 gap-12 xl:grid-cols-3 xl:gap-6 xl:items-start">
           {/* Left: reel (~⅓) */}
           <div className="min-w-0 xl:self-start xl:min-w-0">
