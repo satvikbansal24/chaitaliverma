@@ -48,8 +48,28 @@ export default function Home() {
           </div>
           <div className="relative min-h-[320px] lg:h-full lg:min-h-0">
             {site.heroImages.length > 0 ? (
-              <div className="grid h-full min-h-[360px] grid-cols-2 gap-3 p-3 lg:min-h-[min(100vh,880px)] lg:grid-cols-[minmax(0,1.08fr)_minmax(0,1fr)_minmax(0,1fr)] lg:grid-rows-[1fr_1fr] lg:gap-3 lg:p-4">
-                <div className="relative col-span-2 aspect-[4/5] min-h-0 overflow-hidden lg:col-span-1 lg:row-span-2 lg:aspect-auto lg:h-full">
+              <div className="grid h-full min-h-[360px] grid-cols-2 gap-3 p-3 lg:min-h-[min(100vh,880px)] lg:grid-cols-[minmax(0,1fr)_minmax(0,1.08fr)] lg:grid-rows-1 lg:gap-3 lg:p-4">
+                {/* 2×2 — left on lg; second on mobile (below hero) */}
+                <div className="order-2 grid min-h-0 grid-cols-2 grid-rows-2 gap-3 lg:order-1 lg:h-full lg:min-h-0 lg:gap-3">
+                  {site.heroImages.slice(1).map((img, i) => (
+                    <div
+                      key={img.src}
+                      className="relative aspect-square min-h-0 overflow-hidden lg:aspect-auto lg:min-h-0 lg:h-full"
+                    >
+                      <Image
+                        src={img.src}
+                        alt={img.alt}
+                        fill
+                        className="object-cover"
+                        style={img.objectPosition ? { objectPosition: img.objectPosition } : undefined}
+                        priority={i < 2}
+                        sizes="(max-width: 1024px) 50vw, 22vw"
+                      />
+                    </div>
+                  ))}
+                </div>
+                {/* Large panel — right on lg; first on mobile (top) */}
+                <div className="relative order-1 col-span-2 aspect-[4/5] min-h-0 overflow-hidden lg:order-2 lg:col-span-1 lg:aspect-auto lg:h-full">
                   <Image
                     src={site.heroImages[0].src}
                     alt={site.heroImages[0].alt}
@@ -64,22 +84,6 @@ export default function Home() {
                     sizes="(max-width: 1024px) 100vw, 28vw"
                   />
                 </div>
-                {site.heroImages.slice(1).map((img, i) => (
-                  <div
-                    key={img.src}
-                    className="relative aspect-square min-h-0 overflow-hidden lg:aspect-auto lg:min-h-0 lg:h-full"
-                  >
-                    <Image
-                      src={img.src}
-                      alt={img.alt}
-                      fill
-                      className="object-cover"
-                      style={img.objectPosition ? { objectPosition: img.objectPosition } : undefined}
-                      priority={i < 2}
-                      sizes="(max-width: 1024px) 50vw, 22vw"
-                    />
-                  </div>
-                ))}
               </div>
             ) : (
               <div className="flex h-full min-h-[360px] flex-col items-center justify-center bg-gradient-to-br from-[#1a3a2f] via-stone-800 to-stone-900 px-6 text-center lg:min-h-full">
