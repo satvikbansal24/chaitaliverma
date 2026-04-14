@@ -30,6 +30,8 @@ export function InstagramReelEmbed({
   const path = parseInstagramEmbedPath(permalink);
   if (!path) return null;
 
+  const embedSrc = `https://www.instagram.com/${path}/embed/`;
+
   /** Social Media grid: shorter iframe than before (~740px); IG controls comments inside embed—raise these if any reel shows an inner scrollbar. */
   const compactHeight =
     compact && collaborations
@@ -50,7 +52,7 @@ export function InstagramReelEmbed({
       {/* Don’t cap height below the iframe; that forces scroll inside the iframe */}
       <div className="relative w-full">
         <iframe
-          src={`https://www.instagram.com/${path}/embed/`}
+          src={embedSrc}
           title={title}
           className={`block w-full border-0 ${
             compactHeight ?? defaultHeight

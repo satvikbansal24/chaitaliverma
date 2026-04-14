@@ -11,7 +11,7 @@ const nav = [
   { href: "/instagram", label: "Social Media" },
   { href: "/highlights", label: "Highlights" },
   { href: "/collaborations", label: "Collaborations" },
-  { href: "/media-kit", label: "Media kit" },
+  { href: "/media-kit", label: "Media" },
   { href: "/contact", label: "Contact" },
 ] as const;
 

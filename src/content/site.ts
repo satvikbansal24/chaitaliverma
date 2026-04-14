@@ -13,7 +13,7 @@ export type HeroImage = {
 export const site = {
   title: "Chaitali Verma",
   roleLine: "Food · Travel · Culture",
-  /** Home hero: short intro (full story on media kit) */
+  /** Home hero: short intro (full story on Media page) */
   heroParagraphs: [
     "Hi, I'm Chaitali! A travel content creator who documents and encourages her audience to explore popular destinations differently through offbeat activities, local culture and slow travelling.",
     "For me, the people and their heritage are the true heartbeat of a place, and it is in highlighting these that I find the most joy in.",
@@ -56,19 +56,45 @@ export const site = {
     "From neighborhood bakeries to jungle treks and cities you haven't seen on a postcard. Stories stay grounded in the people who make each place feel real.",
 } as const;
 
-/** Home “What I write”: long-form editorial (add more entries later if needed). */
-export const featuredWriting = {
-  title: "Goan Food You Cannot Miss When in Goa",
-  publication: "Soul Travelling",
-  url: "https://www.soultravelling.in/post/goan-food-you-cannot-miss-when-in-goa",
-  excerpt:
-    "Beyond the beach bars: a guide to Goan food that carries the state's stories, from chorizo and cafreal to xacuti and bolo sans rival.",
-  /** Optional hero image: file in public/ (intrinsic pixels; layout scales, no crop) */
-  image: "/writing-goan-food.png",
-  imageWidth: 1024,
-  imageHeight: 1024,
-  imageAlt: "Coils of Goan chouriço (chorizo), spiced, cured sausages tied in strings",
-} as const;
+/** Home “What I write”: long-form editorial cards (order = display left to right). */
+export type FeaturedWriting = {
+  title: string;
+  publication: string;
+  url: string;
+  excerpt: string;
+  image: string;
+  imageWidth: number;
+  imageHeight: number;
+  imageAlt: string;
+};
+
+export const featuredWritings: readonly FeaturedWriting[] = [
+  {
+    title: "Goan Food You Cannot Miss When in Goa",
+    publication: "Soul Travelling",
+    url: "https://www.soultravelling.in/post/goan-food-you-cannot-miss-when-in-goa",
+    excerpt:
+      "Beyond the beach bars: a guide to Goan food that carries the state's stories, from chorizo and cafreal to xacuti and bolo sans rival.",
+    image: "/writing-goan-food.png",
+    imageWidth: 1024,
+    imageHeight: 1024,
+    imageAlt:
+      "Coils of Goan chouriço (chorizo), spiced, cured sausages tied in strings",
+  },
+  {
+    title: "Delhi's Christmas Markets, Page 106",
+    publication: "Air India magazine · Dec 2025",
+    /** Flipsnack player: opens at the article page (hash = December 2025 issue). */
+    url: "https://namasteaimagazine.com/emagazine/air-india/december-2025/assets/iframe.html?hash=RUM4RUE2RUVGQjUrem41ZW1uanpobQ==&startPage=106",
+    excerpt:
+      "Visitors can find delightful knick-knacks at Delhi’s annual Christmas markets—warm lights, crafts, and seasonal finds worth slowing down for.",
+    image: "/writing-air-india-dec-2025.png",
+    imageWidth: 460,
+    imageHeight: 364,
+    imageAlt:
+      "Hands holding a silver snowflake ornament in front of a lit Christmas tree",
+  },
+];
 
 export type StoryTag = "travel" | "food" | "community" | "people";
 
@@ -238,34 +264,6 @@ export const servicePillars = [
     href: "/instagram#food",
   },
 ] as const;
-
-export const mediaKit = {
-  audience: {
-    primaryRegions: "North America, UK, EU, India (diaspora + inbound)",
-    interests:
-      "Slow travel, regional food, ethical storytelling, boutique hospitality, community-led tourism",
-  },
-  metrics: [
-    { label: "Combined reach", value: "-", hint: "update when ready" },
-    { label: "Instagram", value: "-", hint: "followers + engagement" },
-    { label: "Avg. watch time (video)", value: "-", hint: "reels & long-form" },
-  ],
-  collaborationTypes: [
-    {
-      title: "Destination & experience features",
-      body: "Reels, photo essays, and itineraries that foreground hosts, makers, and everyday rituals, never generic skyline filler.",
-    },
-    {
-      title: "Food & craft storytelling",
-      body: "Producer spotlights, market walks, and kitchen stories with a people-first lens.",
-    },
-    {
-      title: "Brand & hotel partnerships",
-      body: "Campaigns where the property or product is part of a lived narrative, not a logo pasted on a vista.",
-    },
-  ],
-  pastPartners: ["Add partners as you confirm"],
-} as const;
 
 export type TravelReel = {
   slug: string;

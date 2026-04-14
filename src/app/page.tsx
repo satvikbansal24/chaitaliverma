@@ -34,7 +34,7 @@ export default function Home() {
                 href="/media-kit"
                 className="inline-flex items-center justify-center rounded-full bg-[#f2efe6] px-8 py-3.5 text-base font-semibold uppercase tracking-wide text-[var(--green-deep)] transition hover:bg-white sm:text-lg"
               >
-                Media kit
+                Media
               </Link>
             </div>
             <div className="mt-12 max-w-lg space-y-2 text-lg leading-relaxed text-white/80">
@@ -226,7 +226,7 @@ export default function Home() {
               href="/media-kit"
               className="inline-flex rounded-full border border-white/80 bg-transparent px-8 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
             >
-              View media kit
+              View media
             </Link>
           </div>
         </div>
