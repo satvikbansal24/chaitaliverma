@@ -224,17 +224,17 @@ export const reachStats = [
   {
     label: "Instagram",
     value: "259K+",
-    hint: "followers (@chaitali.verma)",
+    hint: "Followers (@chaitali.verma)",
   },
   {
     label: "Standout Reel",
-    value: "1.4M+",
-    hint: "likes · Luang Prabang guide (Mar 2025)",
+    value: "46M+",
+    hint: "Collective Views · Luang Prabang (Mar-25)",
   },
   {
     label: "Content volume",
     value: "562+",
-    hint: "posts · ongoing",
+    hint: "Posts · Ongoing",
   },
 ] as const;
 
