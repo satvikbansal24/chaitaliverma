@@ -17,7 +17,7 @@ export const site = {
   heroParagraphs: [
     "Hi, I'm Chaitali! A travel content creator who documents and encourages her audience to explore popular destinations differently through offbeat activities, local culture and slow travelling.",
     "For me, the people and their heritage are the true heartbeat of a place, and it is in highlighting these that I find the most joy in.",
-    "For me, people and their heritage are the true heartbeat of any place. Whether it's planting paddy in Vietnam, singing old Egyptian songs with locals, dancing with strangers in Italy, or learning the centuries-old Degh Bhapka process in Kannauj, my work celebrates travel as both adventure and cultural education.",
+    "Whether it's planting paddy in Vietnam, singing old Egyptian songs with locals, dancing with strangers in Italy, or learning the centuries-old Degh Bhapka process in Kannauj, my work celebrates travel as both adventure and cultural education.",
   ] as const,
   /**
    * Hero right panel: order [0] = large featured (clearest photo), [1–4] = 2×2 grid (next clearest first).
