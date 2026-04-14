@@ -5,7 +5,14 @@
  * filename exactly (case-sensitive on Linux deploys). Edit a path if your file name differs.
  */
 
-export const collaborationSpotlights = [
+export type CollaborationSpotlight = {
+  slug: string;
+  headline: string;
+  permalink: string;
+  excerpt: string;
+};
+
+export const collaborationSpotlights: readonly CollaborationSpotlight[] = [
   {
     slug: "boond",
     headline: "Boond Fragrance",
@@ -27,7 +34,28 @@ export const collaborationSpotlights = [
     excerpt:
       "Europe travel hacks and slow discovery: practical, cinematic, and audience-first.",
   },
-] as const;
+  {
+    slug: "airbnb-mumbai",
+    headline: "AirBnb",
+    permalink: "https://www.instagram.com/reel/DUN3x5qCCub/",
+    excerpt:
+      "Airbnb’s Mumbai guidebook: exploring the city like a local—street food, art walks, and neighbourhoods beyond the usual lists.",
+  },
+  {
+    slug: "vivo-x300-goa",
+    headline: "Vivo",
+    permalink: "https://www.instagram.com/reels/DRkARwgkrYG/",
+    excerpt:
+      "Goa beyond the beaches: villages, mangroves, and everyday moments captured on the vivo X300.",
+  },
+  {
+    slug: "liril-adulting",
+    headline: "Liril",
+    permalink: "https://www.instagram.com/reels/DJ9QNSnp9Qe/",
+    excerpt:
+      "A fresh take on adulting: slowing down, play, and reset with Liril—because daily rituals deserve a little joy.",
+  },
+];
 
 export const luangPrabangReelStats = [
   { label: "Views", value: "25M+" },
