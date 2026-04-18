@@ -37,7 +37,16 @@ export function SiteFooter() {
           </div>
         </div>
         <p className="mt-12 text-center text-xs text-[var(--green-muted)]">
-          © {new Date().getFullYear()} {site.creatorName}. All rights reserved.
+          © {new Date().getFullYear()} {site.creatorName}. All rights reserved. Designed by{" "}
+          <a
+            href="https://www.instagram.com/satvikbansal24/"
+            className="hover:text-[var(--green-deep)]"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Satvik Bansal
+          </a>
+          .
         </p>
       </div>
     </footer>

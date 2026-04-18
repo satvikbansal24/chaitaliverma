@@ -34,7 +34,7 @@ export function NumberedSection({
       id={id}
       className={`border-b border-[var(--green-border)] ${toneClass[tone]} ${className}`}
     >
-      <div className="w-full px-6 py-16 sm:px-8 sm:py-24 lg:px-12">
+      <div className="w-full px-6 py-14 sm:px-8 sm:py-20 lg:px-12">
         <div className="relative lg:flex lg:gap-10">
           <div
             className="pointer-events-none hidden select-none font-serif text-[clamp(4rem,14vw,9rem)] font-semibold leading-none text-[var(--sage)] opacity-[0.35] lg:block"
@@ -56,7 +56,7 @@ export function NumberedSection({
             {subtitle ? (
               <p className="mt-3 max-w-2xl text-[var(--green-muted)]">{subtitle}</p>
             ) : null}
-            <div className="mt-10">{children}</div>
+            <div className="mt-8">{children}</div>
           </div>
         </div>
       </div>
