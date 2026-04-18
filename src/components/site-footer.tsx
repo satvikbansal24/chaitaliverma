@@ -10,9 +10,9 @@ export function SiteFooter() {
             <p className="font-serif text-lg font-semibold text-[var(--green-deep)]">{site.creatorName}</p>
             <p className="mt-2 text-sm text-[var(--green-muted)]">Food | Travel | Culture</p>
           </div>
-          <div>
+          <div className="sm:justify-self-end">
             <p className="text-sm font-semibold text-[var(--green-deep)]">Connect</p>
-            <ul className="mt-4 space-y-2 text-sm text-[var(--green-muted)]">
+            <ul className="mt-3 space-y-1.5 text-sm text-[var(--green-muted)]">
               <li>
                 <a
                   href={site.social.instagram}
@@ -36,18 +36,23 @@ export function SiteFooter() {
             </ul>
           </div>
         </div>
-        <p className="mt-12 text-center text-xs text-[var(--green-muted)]">
-          © {new Date().getFullYear()} {site.creatorName}. All rights reserved. Designed by{" "}
-          <a
-            href="https://www.instagram.com/satvikbansal24/"
-            className="hover:text-[var(--green-deep)]"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Satvik Bansal
-          </a>
-          .
-        </p>
+        <div className="mt-12 flex flex-col gap-2 text-xs text-[var(--green-muted)] sm:flex-row sm:items-center sm:justify-between">
+          <p>
+            © {new Date().getFullYear()} {site.creatorName}. All rights reserved.
+          </p>
+          <p className="sm:text-right">
+            Designed by{" "}
+            <a
+              href="https://www.instagram.com/satvikbansal24/"
+              className="hover:text-[var(--green-deep)]"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Satvik Bansal
+            </a>
+            .
+          </p>
+        </div>
       </div>
     </footer>
   );
