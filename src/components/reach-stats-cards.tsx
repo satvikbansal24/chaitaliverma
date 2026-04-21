@@ -57,7 +57,7 @@ function easeOutCubic(t: number): number {
   return 1 - (1 - t) ** 3;
 }
 
-const DURATION_MS = 900;
+const DURATION_MS = 1800;
 
 export function ReachStatsCards({ stats }: { stats: readonly Stat[] }) {
   const parsed = useMemo(() => stats.map(parseStat), [stats]);
