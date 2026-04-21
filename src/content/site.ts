@@ -233,7 +233,7 @@ export const reachStats = [
   },
   {
     label: "Content volume",
-    value: "562+",
+    value: "565+",
     hint: "Posts · Ongoing",
   },
 ] as const;

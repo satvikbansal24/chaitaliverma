@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { NumberedSection } from "@/components/numbered-section";
+import { ReachStatsCards } from "@/components/reach-stats-cards";
 import { TravelBetterGrid } from "@/components/travel-better-grid";
 import { WritingSection } from "@/components/writing-section";
 import { reachStats, servicePillars, site } from "@/content/site";
@@ -135,22 +136,7 @@ export default function Home() {
         title="By the numbers"
         tone="white"
       >
-        <div className="grid gap-5 md:grid-cols-3">
-          {reachStats.map((s) => (
-            <div
-              key={s.label}
-              className="rounded-2xl border border-[var(--green-border)] bg-[var(--beige)]/80 p-6"
-            >
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--green-muted)]">
-                {s.label}
-              </p>
-              <p className="mt-3 font-serif text-3xl font-semibold text-[var(--green-deep)] sm:text-4xl">
-                {s.value}
-              </p>
-              <p className="mt-2 text-sm leading-snug text-[var(--green-muted)]">{s.hint}</p>
-            </div>
-          ))}
-        </div>
+        <ReachStatsCards stats={reachStats} />
       </NumberedSection>
 
       {/* 03 What I create */}
