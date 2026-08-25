@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     template: `%s · ${site.title}`,
   },
   description: site.description,
+  appleWebApp: {
+    title: "chaitali",
+  },
 };
 
 export default function RootLayout({
