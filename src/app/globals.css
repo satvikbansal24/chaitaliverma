@@ -7,11 +7,11 @@
   --accent: var(--green-mid);
   --beige: #f5f0e8;
   --beige-deep: #ebe4d8;
-  --green-deep: #7a2e0e;
-  --green-mid: #c2540f;
-  --green-soft: #fbe9dc;
-  --green-muted: #8a4a26;
-  --green-border: rgb(122 46 14 / 0.14);
+  --green-deep: #1a3a2f;
+  --green-mid: #2d5a45;
+  --green-soft: #e8efe9;
+  --green-muted: #3d5340;
+  --green-border: rgb(26 58 47 / 0.14);
   /* Large section numbers (02, 03, …) */
   --sage: #9aab9c;
 }
